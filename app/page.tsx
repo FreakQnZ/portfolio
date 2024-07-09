@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/navbar";
 import Section1 from "@/components/section1";
+import Section2 from "@/components/section2";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Section1 />
+        <Section2 />
       </div>
     </main>
   );

@@ -2,27 +2,24 @@
 
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
-import { TextGenerateEffect } from './ui/TestGenerate'
 import { FlipWords } from './ui/flip-words'
-import Link from 'next/link'
 import { HoverBorderGradient } from './ui/hover-border-gradient'
 
 const Hero = () => {
 
     return (
-        <div className=' text-white max-w-7xl'>
-            <div>
-                <Spotlight className="md:left-50 -top-40 md:pt-0 md:top-44 md:h-[80vh] md:w-[50vw]" fill="white" />
-                <Spotlight className=' top-48 -left-10 md:-left-32 md:-top-12 md:h-[80vh] md:pt-40' fill='skyblue' />
+        <div className=' relative text-white w-full flex flex-col items-center'>
+            <div className=' w-full'>
+                <Spotlight className="top-20 2xl:-top-32 xl:top-0 lg:left-52 left-0" fill="white" />
+                <Spotlight className=' top-48 -left-10 md:-left-32 md:top-40 md:h-[80vh] md:pt-40' fill='skyblue' />
                 <Spotlight className='left-full h-[30vh]' fill='beige' />
             </div>
             <div className="h-screen w-full bg-slate-950  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-                {/* Radial gradient for the container to give a faded look */}
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-slate-950 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             </div>
 
 
-            <div className=' relative z-10 h-screen'>
+            <div className=' relative z-10 h-screen max-w-7xl'>
                 <p className="uppercase tracking-widest text-xs text-center pt-20">
                     Created With <span className=' font-semibold'>Next.JS Tailwind CSS Framer Motion</span>
                 </p>

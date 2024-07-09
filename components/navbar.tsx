@@ -23,7 +23,7 @@ const Navbar = () => {
         },
     ];
     return (
-        <div className='relative w-full'>
+        <div className='relative w-full hidden md:block'>
             <FloatingNav navItems={navItems} />
         </div>
     )

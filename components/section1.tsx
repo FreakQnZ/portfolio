@@ -102,9 +102,9 @@ const Section1 = () => {
         // },
     ];
     return (
-        isClient ? <section id='first' className=' relative bg-slate-950 min-h-screen w-screen flex justify-center' suppressHydrationWarning>
+        isClient ? <section id='first' className=' relative bg-slate-950 w-screen flex flex-col justify-center' suppressHydrationWarning>
             <BackgroundBeams />
-            <div className=' h-screen absolute z-20 top-0 p-4 '>
+            <div className='md:absolute z-20 p-4 w-full '>
                 <div className='text-4xl text-center p-12'>Projects</div>
                 <div className='grid grid-cols-1 md:grid-cols-3'>
                     {items.map((item, i) => (
@@ -129,10 +129,9 @@ const Section1 = () => {
                         </div>
                     ))}
                 </div>
-                {/* <div className=' md:text-end md:pr-40 p-4 text-center md:p-10'>You can also check out other projects on my <Link target='_blank' href={"https://github.com/FreakQnZ"} className='cursor-pointer text-blue-500 font-semibold' >GitHub</Link></div> */}
             </div>
         </section > : null
-        // <section></section>
+
     )
 }
 
