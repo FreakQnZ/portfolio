@@ -1,4 +1,3 @@
-import { defaultOverrides } from 'next/dist/server/require-hook'
 import React from 'react'
 import { FloatingNav } from './ui/floating-navbar'
 
