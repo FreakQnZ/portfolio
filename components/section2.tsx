@@ -1,43 +1,37 @@
 import React from 'react'
 import { LampContainer } from './ui/lamp'
 import { AnimatedTooltip } from './ui/animated-tooltip';
-import python from './images/python.png'
-import js from './images/js.png'
-import next from './images/next.png'
-import express from './images/express.png'
-import numpy from './images/numpy.png'
-import langchain from './images/langchain.png'
 
 const people = [
     {
         id: 1,
         name: "Langchain",
-        image: langchain
+        image: "/langchain.png"
     },
     {
         id: 2,
         name: "Numpy",
-        image: numpy
+        image: "/numpy.png"
     },
     {
         id: 3,
         name: "Express JS",
-        image: express
+        image: "/express.png"
     },
     {
         id: 4,
         name: "Next JS",
-        image: next
+        image: "/next.png"
     },
     {
         id: 5,
         name: "Javascript",
-        image: js
+        image: "/js.png"
     },
     {
         id: 6,
         name: "Python",
-        image: python
+        image: "/python.png"
     },
 ];
 

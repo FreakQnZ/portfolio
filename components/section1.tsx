@@ -2,23 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import React from 'react'
-import { BentoGrid, BentoGridItem } from './ui/bento-grid'
-import {
-    IconArrowWaveRightUp,
-    IconBoxAlignRightFilled,
-    IconBoxAlignTopLeft,
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-} from "@tabler/icons-react";
-import Link from 'next/link';
 import Image from 'next/image';
-import jwt from './images/jwt.png'
-import tmngr from './images/taskmanager.png'
-import churn from './images/churn.png'
-import robin from './images/robin.png'
-import github from './images/github.png'
 import { PinContainer } from './ui/3d-pin';
 import { BackgroundBeams } from './ui/background-beams';
 
@@ -30,22 +14,13 @@ const Section1 = () => {
         setIsClient(true)
     }, [])
 
-    const Skeleton = () => (
-        <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-    );
-
-    const Auth = () => (
-        <div className='flex justify-center'>
-            <Image src={jwt} alt="auth" width={220} />
-        </div>
-    )
     const items = [
         {
             title: "Auth Module",
             description: "Auth module made from scratch using JWT, includes signup login and forgot password feature",
             placeholder: "Github Link",
             href: "https://github.com/FreakQnZ/Auth-Module",
-            img: jwt,
+            img: "/jwt.png",
             imgClass: "",
             width: 300
         },
@@ -54,7 +29,7 @@ const Section1 = () => {
             description: "Platofrom originally created for handling College fest student internships.",
             placeholder: "Live Site Link",
             href: "https://robinit.in/",
-            img: robin,
+            img: "/robin.png",
             imgClass: "pt-10",
             width: 300
         },
@@ -63,7 +38,7 @@ const Section1 = () => {
             description: "Task Manager web application with auth using clerk and a responsive and unique design.",
             placeholder: "Live Site Link",
             href: "https://task-manager-web-application-nine.vercel.app/",
-            img: tmngr,
+            img: "/taskmanager.png",
             imgClass: "pt-6",
             width: 300
         },
@@ -72,7 +47,7 @@ const Section1 = () => {
             description: "Chat App with Websockets for anonymous chating in rooms",
             placeholder: "Github Link",
             href: "https://github.com/FreakQnZ/CN-Project---Chat-app-with-WebSockets",
-            img: jwt,
+            img: "/jwt.png",
             imgClass: "",
             width: 300
         },
@@ -81,7 +56,7 @@ const Section1 = () => {
             description: "Using Tensorflow to create a Deep Learning Model to predict Customer Loyalty",
             placeholder: "Github Link",
             href: "https://github.com/FreakQnZ/Neural-Network-Project",
-            img: churn,
+            img: "/churn.png",
             imgClass: "pt-6 pl-10",
             width: 200
         },
@@ -90,7 +65,7 @@ const Section1 = () => {
             description: "Check out my Github for more projects and projects I am working on.",
             placeholder: "Github Link",
             href: "https://github.com/FreakQnZ",
-            img: github,
+            img: "/github.png",
             imgClass: "pt-6 pl-16",
             width: 180
         },
@@ -123,7 +98,7 @@ const Section1 = () => {
                                             {item.description}
                                         </span>
                                     </div>
-                                    <div className={`${item.imgClass}`}><Image src={item.img} alt="img" width={item.width} /></div>
+                                    <div className={`${item.imgClass}`}><Image src={item.img} height={200} alt="img" width={item.width} /></div>
                                 </div>
                             </PinContainer>
                         </div>
