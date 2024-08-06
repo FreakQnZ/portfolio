@@ -29,7 +29,7 @@ const Hero = () => {
                 <FlipWords words={['Portfolio', 'Blog', 'Diary', 'Space']} duration={2000} />
 
                 <div className=' relative z-10 pt-64 text-lg pl-10'>
-                    Hi I&apos;m Anuraag, A second year undergrad Computer Science student at PES University
+                    Hi I&apos;m Anuraag, A third year undergrad Computer Science student at PES University
                 </div>
 
                 <div className="pt-12 flex justify-center text-center">
