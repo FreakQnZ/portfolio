@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col justify-center items-center bg-slate-950 w-full overflow-hidden">
+    <main className=" w-full overflow-hidden">
       <div className="w-full flex flex-col items-center">
         {/* <Navbar /> */}
         <Hero />

@@ -1,4 +1,4 @@
-// "use client"
+"use client"
 
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
@@ -7,8 +7,13 @@ import { HoverBorderGradient } from './ui/hover-border-gradient'
 
 const Hero = () => {
 
+    const scrolltofirst = () => {
+        const ele = document.getElementById('first')
+        ele?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
-        <div className=' relative text-white w-full flex flex-col items-center'>
+        <div className=' text-white w-full flex flex-col items-center h-dvh relative'>
             <div className=' w-full'>
                 <Spotlight className="top-20 2xl:-top-32 xl:top-0 lg:left-52 left-0" fill="white" />
                 <Spotlight className=' top-48 -left-10 md:-left-32 md:top-40 md:h-[80vh] md:pt-40' fill='skyblue' />
@@ -38,7 +43,7 @@ const Hero = () => {
                         as="button"
                         className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
                     >
-                        <span className='px-5'>Let&apos;s Go</span>
+                        <span onClick={scrolltofirst} className='px-5'>Let&apos;s Go</span>
                     </HoverBorderGradient>
                 </div>
             </div>
