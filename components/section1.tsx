@@ -133,7 +133,7 @@ const AnimatedPinDemo = () => {
     }, [])
     return (
         isClient ?
-            <div className=" w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center bg-slate-950 gap-12 pb-10">
+            <div className=" relative w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center bg-slate-950 gap-12 pb-10">
                 <PinContainer
                     title="/ui.aceternity.com"
                     href="https://twitter.com/mannupaaji"
