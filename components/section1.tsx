@@ -77,33 +77,30 @@ const Section1 = () => {
         // },
     ];
     return (
-        isClient ? <section id='first' className=' relative bg-slate-950 w-screen flex flex-col justify-center' suppressHydrationWarning>
-            <BackgroundBeams />
-            <div className='md:absolute z-20 p-4 w-full '>
-                <div className='text-4xl text-center p-12'>Projects</div>
-                <div className='grid grid-cols-1 md:grid-cols-3'>
-                    {items.map((item, i) => (
-                        <div key={i} className='m-4 p-2'>
+        isClient ? <section className='w-full xl:h-dvh'>
+            <div className='text-4xl text-center p-12'>Projects</div>
+            <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3'>
+                {items.map((item, i) => (
+                    <div key={i} className='m-4 p-2'>
 
-                            <PinContainer
-                                title={item?.placeholder}
-                                href={item?.href}
-                            >
-                                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-                                    <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-                                        {item.title}
-                                    </h3>
-                                    <div className="text-base !m-0 !p-0 font-normal">
-                                        <span className="text-slate-500 ">
-                                            {item.description}
-                                        </span>
-                                    </div>
-                                    <div className={`${item.imgClass}`}><Image src={item.img} height={200} alt="img" width={item.width} /></div>
+                        <PinContainer
+                            title={item?.placeholder}
+                            href={item?.href}
+                        >
+                            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+                                <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                                    {item.title}
+                                </h3>
+                                <div className="text-base !m-0 !p-0 font-normal">
+                                    <span className="text-slate-500 ">
+                                        {item.description}
+                                    </span>
                                 </div>
-                            </PinContainer>
-                        </div>
-                    ))}
-                </div>
+                                <div className={`${item.imgClass}`}><Image src={item.img} height={200} alt="img" width={item.width} /></div>
+                            </div>
+                        </PinContainer>
+                    </div>
+                ))}
             </div>
         </section > : null
 
