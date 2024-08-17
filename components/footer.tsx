@@ -53,11 +53,11 @@ const Footer = () => {
             href: "https://github.com/FreakQnZ",
         },
         {
-            title: "Mail",
+            title: "Mail (anuraag.srivatsa123@gmail.com)",
             icon: (
                 <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "",
+            href: "mailto:anuraag.srivatsa123@gmail.com",
         },
     ];
     return (
