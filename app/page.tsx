@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/navbar";
 import Section1 from "@/components/section1";
@@ -11,7 +12,8 @@ export default function Home() {
         {/* <Navbar /> */}
         <Hero />
         <Section1 />
-        {/* <Section2 /> */}
+        <Section2 />
+        <Footer />
       </div>
     </main>
   );

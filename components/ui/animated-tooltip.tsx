@@ -7,7 +7,6 @@ import {
     AnimatePresence,
     useMotionValue,
     useSpring,
-    None,
 } from "framer-motion";
 
 export const AnimatedTooltip = ({
@@ -16,7 +15,8 @@ export const AnimatedTooltip = ({
     items: {
         id: number;
         name: string;
-        image: string | any;
+        designation?: string;
+        image: string;
     }[];
 }) => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -41,7 +41,7 @@ export const AnimatedTooltip = ({
         <>
             {items.map((item, idx) => (
                 <div
-                    className=" m-4 p-4 relative group"
+                    className="p-3  relative group"
                     key={item.name}
                     onMouseEnter={() => setHoveredIndex(item.id)}
                     onMouseLeave={() => setHoveredIndex(null)}
@@ -73,6 +73,7 @@ export const AnimatedTooltip = ({
                                 <div className="font-bold text-white relative z-30 text-base">
                                     {item.name}
                                 </div>
+                                <div className="text-white text-xs">{item.designation}</div>
                             </motion.div>
                         )}
                     </AnimatePresence>
