@@ -49,7 +49,7 @@ const people = [
 
 const Section2 = () => {
     return (
-        <section className='w-full bg-slate-950 pt-36'>
+        <section className='w-full bg-slate-950 pt-36 relative'>
             <div className='hidden md:flex flex-col justify-between w-full items-center h-screen p-4'>
 
                 <div className='w-full flex flex-col items-center'>
