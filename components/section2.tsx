@@ -49,8 +49,8 @@ const people = [
 
 const Section2 = () => {
     return (
-        <section className='w-full relative'>
-            <div className='hidden md:flex flex-col justify-between bg-slate-950 w-full items-center h-screen p-4'>
+        <section className='w-full bg-slate-950 pt-36'>
+            <div className='hidden md:flex flex-col justify-between w-full items-center h-screen p-4'>
 
                 <div className='w-full flex flex-col items-center'>
                     <span className=' text-4xl font-semibold p-4'>Timeline</span>
@@ -149,7 +149,7 @@ const Section2 = () => {
                 </div>
 
                 <div>
-                    <div className=' text-4xl font-semibold text-center'>Technologies</div>
+                    <div className=' text-4xl font-semibold text-center pb-6'>Technologies</div>
                     <div className="flex flex-row justify-center w-full">
                         <AnimatedTooltip items={people} />
                     </div>

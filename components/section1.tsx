@@ -197,7 +197,7 @@ const AnimatedPinDemo = () => {
 
     return (
         isClient ?
-            <section id='first' className=' w-full bg-slate-950 xl:h-dvh flex flex-col items-center justify-between'>
+            <section id='first' className=' w-full bg-slate-950 xl:h-screen flex flex-col items-center justify-between'>
                 <div className='text-4xl text-center p-12'>Projects</div>
                 <div className=" relative w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-12 pb-10">
                     {items.map((item, i) => (
