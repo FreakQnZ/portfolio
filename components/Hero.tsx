@@ -37,7 +37,7 @@ const Hero = () => {
 
                 <div>
                     <div className=' text-lg text-center m-4'>
-                        Hi I&apos;m Anuraag, A third year undergrad Computer Science student at PES University
+                        Hi I&apos;m Anuraag, A third year undergrad CSE - AIML student at PES University
                     </div>
 
                     <div className="flex justify-center text-center p-2">
